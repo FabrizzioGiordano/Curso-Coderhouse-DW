@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(255, 244, 207);
+    overflow-x: hidden;
+}
+
+/* ENCABEZADO */
+
+.header{
+    font-size: 17px;
+    background-color: #5b0e2d;
+    height: 40px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+}
+
+.liContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.liContainer li{
+    list-style: none;
+
+}
+
+
+.liContainer a{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.logoContainer{
+    height: 30px;
+    width: 30px;
+}
+
+.logo{
+    width: 100%;
+    height: 120%;
+    
+}
+
+.liContainer li:hover{
+    transform: scale(1.2);
+    
+}
+
+.liContainer li a:hover{
+    color: #ffa781;
+}
+
+.header .btn button{
+    font-weight: 500;
+    color: #1b3039;
+    padding: 9px 25px;
+    font-weight: bold;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+
+}
+
+.header .btn button:hover{
+    
+    background-color: #ffffff;
+    color: #ffa781;
+    transform: scale(1.1);
+}
+
+/* H1 */
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.cardContainer{
+    margin-top: 15px;
+}
+
+.card{
+    height: 300px;
+    width: 500px;
+    display:block;
+    margin:auto;
+}
+
+.textHarry{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.imgPrincipal{
+    width: 100%;
+    height: 100%;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    padding: 0px;
+}
+
+.imgPrincipal:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* PELICULAS */
+.imgPortadas{
+    display: flex;
+    width: 1340px;
+    height: 600;
+    margin-top: 250px;
+}
+
+.imgPortadas img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 15px;
+}
+
+.imgPortadas img:hover{
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(150%);
+    position: center; 
+    transform: scale(1);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-top: auto;
+    
+}
+
+footer ul li{
+    list-style: none;
+}
+.redesSocialesContainer{
+    display: flex;
+}
+.redesSocialesContainer li{
+    margin-left: 10px;
+
+}
+.textoFooterContainer{
+    color: white;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-color: cornflowerblue;
+    }
+    
+}
